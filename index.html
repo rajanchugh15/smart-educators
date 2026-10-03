@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Educators | Kids Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🌟 Smart Educators</div>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#learn">Learn</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#facts">Facts</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <span class="badge">LEARN • PLAY • DISCOVER</span>
+    <h1>Learning is an <span>adventure!</span> 🚀</h1>
+    <p>A fun learning space for curious kids to learn new words, explore facts and test their knowledge.</p>
+    <a class="btn" href="#quiz">🎯 Try Today's Quiz</a>
+  </div>
+  <div class="hero-art">📚<br>🧠 ✨<br>🎨</div>
+</section>
+
+<section id="learn">
+<h2>📚 What do you want to learn?</h2>
+<div class="cards">
+  <div class="card pink"><div>🔤</div><h3>English</h3><p>Words, meanings and vocabulary.</p></div>
+  <div class="card blue"><div>🧪</div><h3>Science</h3><p>Discover how the world works.</p></div>
+  <div class="card yellow"><div>🔢</div><h3>Maths</h3><p>Numbers, puzzles and practice.</p></div>
+  <div class="card green"><div>🌏</div><h3>GK</h3><p>Interesting facts about India and the world.</p></div>
+</div>
+</section>
+
+<section class="feature" id="words">
+<h2>🔤 Today's Words</h2>
+<div class="word-grid">
+  <button onclick="speak('Brave')"><b>Brave</b><small>ਤਿਆਰ / ਬਹਾਦਰ</small>🔊</button>
+  <button onclick="speak('Bright')"><b>Bright</b><small>ਚਮਕਦਾਰ</small>🔊</button>
+  <button onclick="speak('Grow')"><b>Grow</b><small>ਵਧਣਾ</small>🔊</button>
+</div>
+</section>
+
+<section id="quiz">
+<h2>🧠 Quiz of the Day</h2>
+<div class="quiz-box">
+  <p class="question">Which planet is known as the Red Planet?</p>
+  <button onclick="answer(this,false)">🌍 Earth</button>
+  <button onclick="answer(this,true)">🔴 Mars</button>
+  <button onclick="answer(this,false)">🪐 Saturn</button>
+  <p id="result"></p>
+</div>
+</section>
+
+<section id="facts">
+<h2>🌍 Amazing Fact</h2>
+<div class="fact">
+  🐋 <strong>Did you know?</strong>
+  <p>The blue whale is the largest animal known to have ever lived on Earth.</p>
+</div>
+</section>
+</main>
+
+<footer>
+  <p>🌟 Smart Educators • Learn Something New Every Day</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
